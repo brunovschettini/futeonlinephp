@@ -150,7 +150,7 @@ class Table {
     }
 
     public static function primaryKey($table) {
-        return self::showKeys(strtolower($table), "PRIMARY", "Column_name");
+        return self::showKeys($table, "PRIMARY", "Column_name");
     }
 
 }

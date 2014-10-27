@@ -11,7 +11,7 @@
  */
 
 /** @Table("type_notify") */
-class type_notifyextends Model {
+class type_notify extends Model {
 
     /** @Column("{'name':'id', 'type':'bigint','length':'20', 'primaryKey':'true'}") */
     public $id;

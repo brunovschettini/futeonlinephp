@@ -1,0 +1,6 @@
+﻿<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+<ShortName>FuteONLINE - Gerenciador Esportivo</description>
+<Image height="16" width="16" type="image/x-icon">http://www.futeonline.com.br/webroot/img/favicon.ico</Image>
+<InputEncoding>ISO-8859-1</InputEncoding>
+<Url type="text/html" template="http://www.ilines.com.br/find.php?q={searchTerms}"/>
+</OpenSearchDescription>

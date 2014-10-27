@@ -35,7 +35,7 @@ $config['config'] = array(
  * <p>Página / Classe default do projeto.</p>
  */
 $config['routers'] = array(
-    'default_page' => 'inicio'
+    'default_page' => 'page'
 );
 
 /**

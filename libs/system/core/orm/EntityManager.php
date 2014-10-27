@@ -128,7 +128,7 @@ class EntityManager extends DB {
             }
             $resultSet = $exe->fetchObject();
             if (is_string($class)) {
-                $class = ucfirst($class);
+                $class = strtolower(strtoupper($class));
                 $class = new $class();
             }
             $object = $this->mergeToObject($class, (array) $resultSet);
@@ -204,7 +204,7 @@ class EntityManager extends DB {
         foreach ($array as $key => $value) {
             if (Table::exist($key)) {
                 $resultSet = $this->find($key, $value);
-                $ob = ucfirst($key);
+                $ob = strtolower(strtoupper($key));
                 $retur = self::mergeToObject(new $ob(), (array) $resultSet);
                 $object->$key = $retur;
             } else {

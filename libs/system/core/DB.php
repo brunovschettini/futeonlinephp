@@ -50,7 +50,7 @@ class DB extends PDO {
             );
         } catch (PDOException $e) {
             print("Connection database failure: " . $e->getMessage() . "<br /><br />");
-            log($e);
+            //log($e);
         }
     }
 

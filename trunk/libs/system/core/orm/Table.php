@@ -35,16 +35,16 @@ class Table {
     }
 
     public static function name($class = null) {
-        $class = strtolower($class);
         try {
             if (is_object($class)) {
                 $class = get_class($class);
             }
+            $class = strtolower($class);
             $reflection = new ReflectionClass($class);
             $table = strtolower(trim(str_replace(self::$replace, "", rtrim(trim($reflection->getDocComment())))));
             return self::exist($table);
         } catch (ReflectionException $e) {
-            log($e);
+            //log($e);
         }
         return null;
     }
@@ -52,15 +52,16 @@ class Table {
     public static function exist($table = "") {
         try {
             $ef = new DB();
+            $table = strtolower(strtoupper($table));
             $exe = $ef->prepare("SHOW TABLES LIKE ? ");
-            if (!$exe->execute(array(strtolower($table)))) {
+            if (!$exe->execute(array($table))) {
                 return false;
             }
             if ($exe->rowCount() > 0) {
                 return $table;
             }
         } catch (PDOException $e) {
-            log($e);
+            //log($e);
             return false;
         }
         return false;
@@ -70,7 +71,7 @@ class Table {
         try {
             $tableName = strtolower(self::name($class));
             if (is_string($class)) {
-                $ob = ucfirst($class);
+                $ob = strtolower(strtoupper($class));
                 $newOb = new $ob();
             }
             $value = null;
@@ -82,7 +83,7 @@ class Table {
             }
             return self::create($tableName, $tableColumns);
         } catch (Exception $e) {
-            log($e);
+            //log($e);
             return false;
         }
     }
@@ -142,7 +143,7 @@ class Table {
                 return $resultSet->$key;
             }
         } catch (PDOException $e) {
-            log($e);
+            //log($e);
             return null;
         }
         return null;

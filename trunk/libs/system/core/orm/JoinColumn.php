@@ -24,7 +24,7 @@ abstract class JoinColumn {
             $column = trim(str_replace($this->replace, "", rtrim(trim($reflection->getProperty($var)->getDocComment()))));
             return self::exist($column);
         } catch (ReflectionException $e) {
-            log($e);
+            //log($e);
         }
         return null;
     }
@@ -51,7 +51,7 @@ abstract class JoinColumn {
                 return $exe->fetchAll();
             }
         } catch (PDOException $e) {
-            log($e);
+            //log($e);
         }
         return array();
     }

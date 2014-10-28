@@ -43,7 +43,7 @@ $config['routers'] = array(
  * <p>Extensões permitidas.</p>
  */
 $config['extensions'] = array(
-    'php', 'html', 'htm', 'xhtml'
+    'php', 'html', 'htm', 'xhtml', 'tpl'
 );
 
 // PÁGINAS PRIVADAS

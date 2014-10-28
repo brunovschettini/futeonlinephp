@@ -25,10 +25,11 @@
  * @author sweetphp
  */
 $config['db'] = array(
-    'host' => 'futeonline.com.br',
+    //'host' => 'futeonline.com.br',
+    'host' => 'localhost',
     'database' => 'futeonl_futebol',
-    'user' => 'futeonl',
-    'password' => 'ht3Mm@lhead',
+    'user' => 'root',
+    'password' => '',
     'driver' => 'mysql',
     'charset' => 'UTF8',
     'port' => '3306'

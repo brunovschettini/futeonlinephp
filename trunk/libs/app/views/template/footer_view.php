@@ -7,19 +7,14 @@
                     <div class="row">
                         <div class="col-md-3 margin-top-max">
                             <ul class="side-nav">
-                                <li><strong class="font-color-yellow">Ilines</strong></li>
-                                <li><a href="<?= Helpers::baseUrl('#pagina/precos'); ?>">Preços</a></li>
-                                <li><a href="<?= Helpers::baseUrl('pagina/login'); ?>">Intranet</a></li>
+                                <li><strong class="font-color-yellow">FuteOnline</strong></li>
+                                <li><a href="<?php echo Helpers::baseUrl('page/prices'); ?>">Preços</a></li>
+                                <li><a href="<?php echo Helpers::baseUrl('page/tour'); ?>">Tour</a></li>
                             </ul>
                         </div>
                         <div class="col-md-3 margin-top-max">
                             <ul class="side-nav">
-                                <li><strong>FuteOnline</strong></li>
-                                <li><a href="<?php echo Helpers::baseUrl('page/prices'); ?>">Preços</a></li>
-                                <li><a href="<?php echo Helpers::baseUrl('page/tour'); ?>">Tour</a></li>
-                            </ul>
-                            <ul class="side-nav">
-                                <li><strong>Quem somos</strong></li>
+                                <li><strong class="font-color-yellow">Quem somos</strong></li>
                                 <li><a href="http://blog.futeonline.com.br" target="_blank">Blog do FuteOnline</a></li>
                                 <li><a href="<?php echo Helpers::baseUrl('page/equipe'); ?>">Nossa equipe</a></li>
                             </ul>               
@@ -27,21 +22,14 @@
                         <div class="col-md-3 margin-top-max">
                             <ul class="side-nav">
                                 <li><strong class="font-color-yellow">Atendimento</strong></li>
-                                <li> <a href="<?= Helpers::baseUrl('pagina/#central_ajuda'); ?>">Central de ajuda</a></li>
-                                <li><a href="<?= Helpers::baseUrl('pagina/#privacidade'); ?>">Privacidade</a></li>
-                                <li><a href="<?= Helpers::baseUrl('pagina/fale_conosco'); ?>">Fale conosco</a></li>
+                                <li> <a href="<?= Helpers::baseUrl('page/#central_ajuda'); ?>">Central de ajuda</a></li>
+                                <li><a href="<?= Helpers::baseUrl('page/#privacidade'); ?>">Privacidade</a></li>
+                                <li><a href="<?= Helpers::baseUrl('page/contact_us'); ?>">Fale conosco</a></li>
                             </ul>              
                         </div>
                         <div class="col-md-3 margin-top-max">
                             <ul class="side-nav">
-                                <li><strong>Atendimento</strong></li>
-                                <li>  <a href="<?php echo Helpers::baseUrl('page/central_ajuda'); ?>">Central de ajuda</a></li>
-                                <li>  <a href="<?php echo Helpers::baseUrl('page/terms'); ?>">Termos de uso</a></li>
-                                <li><a href="<?php echo Helpers::baseUrl('page/privacity'); ?>">Privacidade</a></li>
-                                <li><a href="<?php echo Helpers::baseUrl('page/contact-us'); ?>">Fale conosco</a></li>
-                            </ul>
-                            <ul class="side-nav">
-                                <li><strong>Comunidade</strong></li>
+                                <li><strong class="font-color-yellow">Comunidade</strong></li>
                                 <li><a href="http://fb.com/FuteOnline" target="_blank">Facebook</a></li>
                                 <li><a href="http://twitter.com/FuteOnlineBr" target="_blank">Twitter</a></li>
                                 <li><a href="https://plus.google.com/u/0/communities/107150522069437415322">Google+</a></li>

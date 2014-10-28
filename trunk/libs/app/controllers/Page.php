@@ -20,7 +20,7 @@ class Page {
     }
 
     public function index() {
-        Routers::changePage('home_view', null, array('title' => 'FuteOnline', 'users' => $this->users));
+        Routers::changePage('home_view.php', null, array('title' => 'FuteOnline', 'users' => $this->users));
     }
 
     public function privacity() {

@@ -18,8 +18,8 @@
         <script src="<?php echo Helpers::baseUrl("js/script.js"); ?>"></script>
     </head>
     <body>
-<?php include 'google_analytics_view.php'; ?>
-        <div class="wrapx">
+<?php // include 'google_analytics_view.php'; ?>
+        <!-- <div class="wrapx">
             <div class="mainx">
 
                 <div class="off-canvas-wrap">
@@ -46,7 +46,7 @@
                             </ul>
 
                         </aside>
-                        <!-- MENU VISIVEL PARA TABLETS E CELULARES -->    
+                        < ! - - MENU VISIVEL PARA TABLETS E CELULARES -- >    
                         <nav class="tab-bar show-for-small">
                             <a class="left-off-canvas-toggle menu-icon ">
                                 <span>
@@ -55,7 +55,7 @@
                             </a>  
                         </nav>
 
-                        <!-- MENU VISIVEL PARA PCS -->    
+                        < ! - - MENU VISIVEL PARA PCS -- >    
                         <nav class="top-bar hide-for-small" data-topbar="">
                             <ul class="title-area">
                                 <li class="name">
@@ -114,3 +114,4 @@
 
 
 
+-->

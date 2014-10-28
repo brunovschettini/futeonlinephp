@@ -13,7 +13,7 @@ html, body {height: 100%;}
         clear:both;
 } 
 
-.bg-home {background: url('img/bg_home.png') no-repeat; background-size: 100% auto;}   /* must be same height as the footer */
+.bg-home {background: url('img/bg_home.png') no-repeat; background-size: 100% auto; background-position: center;}   /* must be same height as the footer */
 .privacidade {background: url('img/icon_privacidade.png') no-repeat; display: block; height: 32px;}   /* must be same height as the footer */
 
 

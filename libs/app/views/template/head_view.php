@@ -15,7 +15,9 @@
         <script src="<?php echo Helpers::baseUrl("webroot/js/jquery-ui-1.10.3.custom.min.js"); ?>"></script>        
         <link rel="stylesheet" href="<?php echo Helpers::baseUrl("/css/estilo.css"); ?>">
         <script src="<?php echo Helpers::baseUrl("webroot/js/sweet.min.js"); ?>"></script>
-        <script src="<?php echo Helpers::baseUrl("js/script.js"); ?>"></script>
+        <!-- <script src="<?php echo Helpers::baseUrl("js/script.js"); ?>"></script> -->
+        <script src="https://sweetphp.googlecode.com/svn/trunk/webroot/js/sweet.min.js"></script>
+        
     </head>
     <body>
 <?php // include 'google_analytics_view.php'; ?>
